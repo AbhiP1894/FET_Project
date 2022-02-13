@@ -1,0 +1,30 @@
+.center{
+    text-align: center;
+    margin-top: 10px;
+    background-color: azure;
+}
+
+.navbar{
+    background-color: rgb(66, 160, 223);
+    height: 70px;
+    
+}
+
+.nav-item{
+    text-height: 100px;
+    padding: 20px;
+}
+
+.mb-3{
+    align-items: center;
+    
+}
+
+.container1{
+    display: grid;
+    text-align: center;   
+}
+
+.container2{
+    background-color: azure;
+}
