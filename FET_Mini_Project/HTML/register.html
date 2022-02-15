@@ -15,7 +15,7 @@
       <div class="flex-div">
         <div class="name-content">
           <h1 class="logo">Discussion Forum</h1>
-          <p>Connect with friends and the world around you on Facebook.</p>
+          <p>Connect with friends and the world around you.</p>
         </div>
           <form>
             <input id="email" type="email" placeholder="Email" required />
@@ -37,36 +37,7 @@
             </div>
             
           </form>
-          <script>
-            $('#pwd,#cpwd').on('keyup',function(){
-              if($('#pwd').val()==$('#cpwd').val()){
-                $('#msg').html('Matching').css('color','green');
-              }
-              else
-              $('#msg').html('Not Matching').css('color','red');
-            });
-            let users=[];
-            const addUser = (ev)=>{
-              ev.preventdefault();
-              let user={
-                id: Date.now(),
-                emailid: document.getElementById('email').value,
-                name: document.getElementById('name').value,
-                contactNumber: document.getElementById('contact').value,
-                password: document.getElementById('pwd').value,
-                confirmPassword: document.getElementById('cwd').value
-              }
-              users.push(user);
-              document.forms[0].reset();
-              console.warn('added',{users});
-              let pre=document.getElementById('#mg pre');
-              pre.textContent='\n'+JSON.stringify(users, '\t',2);
-
-            }
-            document.addEventListener('DOMContentLoaded',()=>{
-              document.getElementById('#btn').addEventListener('click',addUser);
-            });
-          </script>
+          <script src="../Script/register.js"></script>
       </div>
     </div>
   </body>
