@@ -1,0 +1,10 @@
+.form-control{
+   height: 300px; 
+}
+
+.btn{
+    height: 20px;
+    width: 400px;
+    justify-self: end;
+    color: aliceblue;
+}
