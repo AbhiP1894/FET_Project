@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/forum.css" />
-    <link rel="stylesheet" href="../CSS/register.css">
+    <link rel="stylesheet" href="forumcss.css" />
+    <link rel="stylesheet" href="registercss.css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -16,11 +16,12 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Discussion Forum</title>
   </head>
   <body class="container2">
+    
     
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -39,13 +40,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link"  href="./home.html"><strong>Home</strong></a>
+              <a class="nav-link"  href="home.html"><strong>Home</strong></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../HTML/login.html"><strong>Login</strong></a>
+              <a class="nav-link" href="login.html"><strong>Login</strong></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./register.html"><strong>Sign up</strong></a>
+              <a class="nav-link" href="signup.html"><strong>Sign up</strong></a>
             </li>
 
             <li class="nav-item dropdown">
@@ -60,12 +61,12 @@
                 <strong>Categories</strong>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">All</a></li>
-                <li><a class="dropdown-item" href="#">Study</a></li>
-                <li><a class="dropdown-item" href="#">Cricket</a></li>
+                <li><a class="dropdown-item" href="#" onclick="myFunction()"></a>Java</a></li>
+                <li><a class="dropdown-item" href="#" onclick="myFunction1()"></a>Php</a></li>
+                <li><a class="dropdown-item" href="#" onclick="myFunction2()"></a>Python</a></li>
 
                 <li>
-                  <a class="dropdown-item" href="#">Football</a>
+                  <a class="dropdown-item" href="#" onclick="myFunction3()"></a>C#</a>
                 </li>
               </ul>
             </li>
@@ -88,16 +89,21 @@
       </div>
     </nav>
 
+    <div class="btn1">
+     <a href="#"><button class="btn2">Ask me</button></a>  
+
+    </div>
+
     <div class="container1">
       <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="../Images/question.png" class="img-fluid rounded-start" alt="...">
+              <img src="question.png" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Java</h5>
+                <p class="card-text">How to install JDK?</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -107,12 +113,12 @@
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="../Images/question.png" class="img-fluid rounded-start" alt="...">
+              <img src="question.png" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Php</h5>
+                <p class="card-text">Difference between php4 and php5</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -122,12 +128,12 @@
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="../Images/question.png" class="img-fluid rounded-start" alt="...">
+              <img src="question.png" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Python</h5>
+                <p class="card-text">What are some of the key features of Python? </p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -139,12 +145,12 @@
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="../Images/question.png" class="img-fluid rounded-start" alt="...">
+                <img src="question.png" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">C#</h5>
+                  <p class="card-text">What is an Escape Sequence in C#?</p>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
@@ -154,12 +160,12 @@
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="../Images/question.png" class="img-fluid rounded-start" alt="...">
+                <img src="question.png" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Java</h5>
+                  <p class="card-text">Difference between finally and finalize block</p>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
@@ -169,19 +175,53 @@
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="../Images/question.png" class="img-fluid rounded-start" alt="...">
+                <img src="question.png" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Python</h5>
+                  <p class="card-text">What is the difference between list and tuples in Python?</p>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
             </div>
           </div>
     </div>
+      <!-- Footer -->
+<footer class="footerr">
 
-    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"> For more queries, contact us on:
+      <a href="#">aishwaryaka@cyabge.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    <!-- <script>
+
+    $(document).ready(function(){
+      ("#dropdown-menu").on("keyup",function() {      
+        var value=$(this).val().toLowerCase();
+             $("#div1 li").filter(function(){
+                document.ready(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+                 });
+            });
+        });   
+
+        function myFunction(){
+            document.getElementById("Java").style.display="block";
+           
+        }
+        function myFunction1(){
+            document.getElementById("Php").style.display="block";
+        }
+        function myFunction2(){
+            document.getElementById("Python").style.display="block";
+        }
+        function myFunction3(){
+            document.getElementById("C#").style.display="block";
+        }
+        </script> -->
   </body>
 </html>
