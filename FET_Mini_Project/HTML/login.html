@@ -62,12 +62,12 @@
                         <form class="myform">
 
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                <input type="email" id="userEmail" class="form-control" id="exampleFormControlInput1"
                                     placeholder="name@example.com">
                             </div>
 
                             <div class="mb-3">
-                                <input type="password" class="form-control" id="exampleFormControlInput1"
+                                <input type="password" id="userPw" class="form-control" id="exampleFormControlInput1"
                                     placeholder="password">
                             </div>
 
@@ -75,7 +75,7 @@
 
                             <div class="col-md-6 col-12">
                                 <div class="form-group form-check ">
-                                    <input type="checkbox" class="form-check-input" name="">
+                                    <input type="checkbox" id="rememberMe" class="form-check-input" name="">
                                     <label class="form-check-label ">Remember Me</label>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@
 
                             </div>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button">
+                                <button class="btn btn-primary" type="submit" onclick="check()">
                                     <small><i class="far fa-user pr-2"></i> Login </small>
                                 </button>
                             </div>
