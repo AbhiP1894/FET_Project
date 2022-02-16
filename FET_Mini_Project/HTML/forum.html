@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+      tinymce.init({
+        selector: 'textarea#editor',
+        menubar: false
+      });
+    </script>
+</head>
+<body>
+    
+    <div class="container mt-4 mb-4">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label><br>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Category of question eg java, php,python,etc.">
+          </div>
+        <div class="row justify-content-md-center">
+          <div class="col-md-12 col-lg-8">
+            
+            <label>Describe the question in detail</label>
+            <div class="form-group">
+               <textarea id="editor"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+     
+</body>
+</html>
