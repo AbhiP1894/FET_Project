@@ -42,19 +42,23 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #212042;
+  opacity: 0.9;
   padding: 2rem;
   width: 530px;
   height: 380px;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  box-shadow: 5px 5px;
 }
 
 form input {
-  outline: none;
+  outline: indianred;
   padding: 0.8rem 1rem;
   margin-bottom: 0.8rem;
   font-size: 1.1rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px;
 }
 
 form input:focus {
@@ -235,11 +239,16 @@ form .create-account:hover {
     padding: 10px;
     
 }
-
-
-
 .container1{
     display: flex;
     padding: 10px;
     margin: 10px;
+}
+#btn{
+  
+    background: linear-gradient(135deg, rgba(175,106,252,1) 39%, rgb(116,17,255,1) 100%) !important;
+    border:none;
+    border-radius: 50px;
+    margin-top:5px;
+   
 }

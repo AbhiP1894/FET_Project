@@ -1,3 +1,9 @@
+*{
+    margin:0px;
+    padding:0px;
+    row-gap: 20px;
+}
+
 .center{
     text-align: center;
     margin-top: 10px;
@@ -11,20 +17,45 @@
 }
 
 .nav-item{
-    text-height: 100px;
+   
     padding: 20px;
 }
 
 .mb-3{
     align-items: center;
-    
+    row-gap: 20px;
 }
 
 .container1{
     display: grid;
-    text-align: center;   
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    text-align: center;  
 }
 
 .container2{
     background-color: azure;
+}
+
+.footerr{
+    position: fixed;
+    left:0;
+    height: 50px;
+    bottom: 0;
+    width:100%;
+    background-color: rgb(66, 160, 223);
+}
+.btn1{
+    margin-top: 20px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.btn2{
+    background-color: indianred;
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
 }
